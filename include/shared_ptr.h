@@ -77,7 +77,7 @@ class SharedPtr {
             }
         }
     }
-    operator bool() const { return _p == nullptr; }
+    operator bool() const { return _p != nullptr; }
 
    private:
     int* p_count = nullptr;
